@@ -1,0 +1,150 @@
+@import 'tailwindcss';
+
+/* Custom theme variables for black & white aesthetic */
+@theme {
+  --font-sans: 'Space Grotesk', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Monaco, Consolas, monospace;
+  
+  /* Custom colors for the detection system */
+  --color-background: #ffffff;
+  --color-foreground: #09090b;
+  --color-card: #ffffff;
+  --color-card-foreground: #09090b;
+  --color-popover: #ffffff;
+  --color-popover-foreground: #09090b;
+  --color-primary: #18181b;
+  --color-primary-foreground: #fafafa;
+  --color-secondary: #f4f4f5;
+  --color-secondary-foreground: #18181b;
+  --color-muted: #f4f4f5;
+  --color-muted-foreground: #71717a;
+  --color-accent: #f4f4f5;
+  --color-accent-foreground: #18181b;
+  --color-destructive: #ef4444;
+  --color-destructive-foreground: #fafafa;
+  --color-border: #e4e4e7;
+  --color-input: #e4e4e7;
+  --color-ring: #18181b;
+  
+  --radius-lg: 0.5rem;
+  --radius-md: calc(var(--radius-lg) - 2px);
+  --radius-sm: calc(var(--radius-lg) - 4px);
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  @theme {
+    --color-background: #09090b;
+    --color-foreground: #fafafa;
+    --color-card: #09090b;
+    --color-card-foreground: #fafafa;
+    --color-popover: #09090b;
+    --color-popover-foreground: #fafafa;
+    --color-primary: #fafafa;
+    --color-primary-foreground: #18181b;
+    --color-secondary: #27272a;
+    --color-secondary-foreground: #fafafa;
+    --color-muted: #27272a;
+    --color-muted-foreground: #a1a1aa;
+    --color-accent: #27272a;
+    --color-accent-foreground: #fafafa;
+    --color-destructive: #7f1d1d;
+    --color-destructive-foreground: #fafafa;
+    --color-border: #27272a;
+    --color-input: #27272a;
+    --color-ring: #d4d4d8;
+  }
+}
+
+/* Base styles */
+* {
+  border-color: var(--color-border);
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-muted);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-muted-foreground);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-foreground);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.3s ease-out;
+}
+
+.animate-slide-in {
+  animation: slideIn 0.3s ease-out;
+}
+
+.animate-pulse-subtle {
+  animation: pulse 2s ease-in-out infinite;
+}
+
+/* New detection highlight */
+tr.new-detection {
+  animation: fadeIn 0.5s ease-out;
+  background-color: rgba(16, 185, 129, 0.1);
+}
+
+/* Focus visible styles */
+:focus-visible {
+  outline: 2px solid var(--color-ring);
+  outline-offset: 2px;
+}
+
+/* Selection styles */
+::selection {
+  background-color: var(--color-primary);
+  color: var(--color-primary-foreground);
+}
+
