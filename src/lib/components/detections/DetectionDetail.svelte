@@ -65,7 +65,7 @@
 					</div>
 					<div>
 						<p class="text-xs text-muted-foreground">Marca / Modelo</p>
-						<p class="font-medium">{detection.modelo}</p>
+						<p class="font-medium">{detection.marca}{detection.modelo !== "No detectado" ? ` / ${detection.modelo}` : ""}</p>
 					</div>
 				</div>
 
