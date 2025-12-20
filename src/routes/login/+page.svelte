@@ -43,7 +43,8 @@
 		<!-- Logo -->
 		<div class="mb-8 flex flex-col items-center">
 			<div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-primary shadow-lg">
-				<Camera class="h-8 w-8 text-primary-foreground" />
+				// Insert logo from static assets
+				<img src="/logo.png" alt="AutoVision Logo" class="h-8 w-8" />
 			</div>
 			<h1 class="mt-4 text-2xl font-bold tracking-tight">AutoVision</h1>
 			<p class="text-sm text-muted-foreground">Sistema de Detección de Placas</p>

@@ -18,8 +18,8 @@
 <header class="sticky top-0 z-40 flex h-16 items-center justify-between border-b bg-background px-6">
 	<!-- Logo -->
 	<div class="flex items-center gap-3">
-		<div class="flex h-9 w-9 items-center justify-center rounded-lg bg-primary">
-			<Camera class="h-5 w-5 text-primary-foreground" />
+		<div class="flex h-16 w-16 items-center justify-center rounded-lg">
+			<img src="/logo.png" alt="AutoVision Logo" class="h-16 w-16" />
 		</div>
 		<div class="flex flex-col">
 			<span class="text-lg font-bold tracking-tight">AutoVision</span>
