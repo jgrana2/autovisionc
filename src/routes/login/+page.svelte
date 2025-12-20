@@ -41,12 +41,11 @@
 <div class="flex min-h-screen items-center justify-center bg-gradient-to-br from-zinc-50 to-zinc-100 p-4">
 	<div class="w-full max-w-md">
 		<!-- Logo -->
-		<div class="mb-8 flex flex-col items-center">
-			<div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-primary shadow-lg">
-				// Insert logo from static assets
-				<img src="/logo.png" alt="AutoVision Logo" class="h-8 w-8" />
+		<div class="flex flex-col items-center mb-8">
+			<div class="flex h-24 w-64 items-center justify-center rounded-2xl bg-primary">
+				<img src="/logow.png" alt="AutoVision Logo" class="h-64 w-64" />
 			</div>
-			<h1 class="mt-4 text-2xl font-bold tracking-tight">AutoVision</h1>
+			<h1 class="mt-4 text-2xl font-bold tracking-tight text-black">AutoVision</h1>
 			<p class="text-sm text-muted-foreground">Sistema de Detección de Placas</p>
 		</div>
 
