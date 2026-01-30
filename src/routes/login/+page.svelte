@@ -43,7 +43,7 @@
 		<!-- Logo -->
 		<div class="flex flex-col items-center mb-8">
 			<div class="flex h-24 w-64 items-center justify-center rounded-2xl bg-primary">
-				<img src="/logow.png" alt="AutoVision Logo" class="h-64 w-64" />
+				<img src="/logoExaFondoBlanco.png" alt="AutoVision Logo" class="h-30 w-64" />
 			</div>
 			<h1 class="mt-4 text-2xl font-bold tracking-tight text-black">AutoVision</h1>
 			<p class="text-sm text-muted-foreground">Sistema de Detección de Placas</p>
