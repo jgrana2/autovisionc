@@ -18,8 +18,8 @@
 <header class="sticky top-0 z-40 flex h-16 items-center justify-between border-b bg-background px-6">
 	<!-- Logo -->
 	<div class="flex items-center gap-3">
-		<div class="flex h-16 w-16 items-center justify-center rounded-lg">
-			<img src="/logoExaFondoNegro.png" alt="AutoVision Logo" class="h-16 w-32" />
+		<div class="flex h-14 w-32 items-center justify-center rounded-lg">
+			<img src="/logoExaFondoNegro.png" alt="AutoVision Logo" class="h-14 w-32" />
 		</div>
 		<div class="flex flex-col">
 			<span class="text-lg font-bold tracking-tight">AutoVision</span>
