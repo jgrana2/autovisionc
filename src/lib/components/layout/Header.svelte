@@ -19,7 +19,7 @@
 	<!-- Logo -->
 	<div class="flex items-center gap-3">
 		<div class="flex h-14 w-32 items-center justify-center rounded-lg">
-			<img src="/logoExaFondoNegro.png" alt="AutoVision Logo" class="h-14 w-32" />
+			<img src="/logoExaTransparentFondoNegro.png" alt="AutoVision Logo" class="h-14 w-32" />
 		</div>
 		<div class="flex flex-col">
 			<span class="text-lg font-bold tracking-tight">AutoVision</span>
